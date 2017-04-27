@@ -29,3 +29,6 @@ backup/yolo_final.weights is the final trained weights.
  ./darknet yolo demo_vid cfg/yolo.cfg backup/yolo_final.weights 3.mp4 -thresh 0.1
 
 see predictions.png or out.avi for the result of testing.
+
+github repository : https://github.com/mayukuse24/pokemon-classifier/edit/master/README.md
+Dataset at : https://drive.google.com/open?id=0B7ToU0uexZWkeE5RVC1rWkMteDQ
