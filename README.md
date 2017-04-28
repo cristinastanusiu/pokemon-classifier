@@ -19,23 +19,28 @@ backup/yolo_final.weights is the final trained weights.
 See yolo.c for configurations regarding using darknet with different directory and class configurations.
 
 #Training
-./darknet yolo train <config-file> <pre-dev-weights>
-./darknet yolo train cfg/yolo.cfg extraction.conv.weights
+
+`./darknet yolo train <config-file> <pre-dev-weights>`
+`./darknet yolo train cfg/yolo.cfg extraction.conv.weights`
 
 #Testing on image
-./darknet yolo test <config-file> <trained-weights> <path-to-image-testing> -thresh 0.2 [Optional-default value 0.25]
-./darknet yolo test cfg/yolo.cfg backup/yolo_final.weights images/charizard_305.jpg -thresh 0.2
+
+`./darknet yolo test <config-file> <trained-weights> <path-to-image-testing> -thresh 0.2 [Optional-default value 0.25]`
+`./darknet yolo test cfg/yolo.cfg backup/yolo_final.weights images/charizard_305.jpg -thresh 0.2`
 
 #Testing on video
- ./darknet yolo demo_vid cfg/yolo.cfg backup/yolo_final.weights 3.mp4 -thresh 0.1
+
+`./darknet yolo demo_vid cfg/yolo.cfg backup/yolo_final.weights 3.mp4 -thresh 0.1`
 
 see predictions.png or out.avi for the result of testing.
 
 
 #Multi-class SVM for pokemon detection
 
+`python main.py`
 
 
 
 github repository : https://github.com/mayukuse24/pokemon-classifier
+
 Dataset at : https://drive.google.com/open?id=0B7ToU0uexZWkeE5RVC1rWkMteDQ
