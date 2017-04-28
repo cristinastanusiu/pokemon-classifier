@@ -9,11 +9,17 @@ Set the correct path to cuda libraries to overcome compilation errors.
 Important files inside root directory
 
 `src` contains the source code for running darknet-yolo
+
 `Images` folder contains all the images for training.
+
 `Labels` folder contains the annotated data of each image.
+
 `train.txt` file contains paths to images used for training. Only images for which path is provided will be trained.
+
 `cfg/yolo.cfg` file is used as configuration for Neural Net.
+
 `data/labels` contains png files which are used in tagging bounding boxes.
+
 `backup/yolo_final.weights` is the final trained weights.
 
 See yolo.c for configurations regarding using darknet with different directory and class configurations.
