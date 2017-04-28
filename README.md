@@ -1,6 +1,6 @@
-The pokemon images have been obtained and annotated manually using imgLabelGUI.
+*1)* The pokemon images have been obtained and annotated manually using imgLabelGUI.
 
-Dependencies - Cuda+Graphics card, OpenCV(Optional)
+*2)* Dependencies - Cuda+Graphics card, OpenCV(Optional)
 
 run Makefile to compile the code.
 Use GPU=1 for using the GPU before Make.
@@ -18,24 +18,26 @@ backup/yolo_final.weights is the final trained weights.
 
 See yolo.c for configurations regarding using darknet with different directory and class configurations.
 
-#Training
+#*Training*
 
 `./darknet yolo train <config-file> <pre-dev-weights>`
+
 `./darknet yolo train cfg/yolo.cfg extraction.conv.weights`
 
-#Testing on image
+#*Testing on image*
 
 `./darknet yolo test <config-file> <trained-weights> <path-to-image-testing> -thresh 0.2 [Optional-default value 0.25]`
+
 `./darknet yolo test cfg/yolo.cfg backup/yolo_final.weights images/charizard_305.jpg -thresh 0.2`
 
-#Testing on video
+#*Testing on video*
 
 `./darknet yolo demo_vid cfg/yolo.cfg backup/yolo_final.weights 3.mp4 -thresh 0.1`
 
 see predictions.png or out.avi for the result of testing.
 
 
-#Multi-class SVM for pokemon detection
+#*Multi-class SVM for pokemon detection*
 
 `python main.py`
 
