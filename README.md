@@ -6,7 +6,7 @@ run Makefile to compile the code.
 Use GPU=1 for using the GPU before Make.
 Set the correct path to cuda libraries to overcome compilation errors.
 
-Important files
+Important files inside root directory
 
 src contains the source code for running darknet-yolo
 Images folder contains all the images for training.
@@ -16,6 +16,7 @@ cfg/yolo.cfg file is used as configuration for Neural Net.
 data/labels contains png files which are used in tagging bounding boxes.
 backup/yolo_final.weights is the final trained weights.
 
+See yolo.c for configurations regarding using darknet with different directory and class configurations.
 
 #Training
 ./darknet yolo train <config-file> <pre-dev-weights>
@@ -30,5 +31,11 @@ backup/yolo_final.weights is the final trained weights.
 
 see predictions.png or out.avi for the result of testing.
 
-github repository : https://github.com/mayukuse24/pokemon-classifier/edit/master/README.md
+
+#Multi-class SVM for pokemon detection
+
+
+
+
+github repository : https://github.com/mayukuse24/pokemon-classifier
 Dataset at : https://drive.google.com/open?id=0B7ToU0uexZWkeE5RVC1rWkMteDQ
